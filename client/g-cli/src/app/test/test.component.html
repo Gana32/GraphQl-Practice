@@ -1,0 +1,10 @@
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="error">Errro:{{error}}</div>
+<div *ngIf="data">
+   <ul>
+    <li *ngFor="let todo of data">
+        {{todo.title}} - {{todo.user.name}}
+    </li>
+   </ul>
+</div>
+<h1>Hello</h1>
